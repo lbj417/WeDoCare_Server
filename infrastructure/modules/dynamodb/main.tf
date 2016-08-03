@@ -115,6 +115,13 @@ resource "aws_dynamodb_table" "patientQuestionnaires" {
     hash_key = "questionnaireId"
     projection_type = "ALL"
   }
+  global_secondary_index {
+    name = "PatientIdIndex"
+    read_capacity = 10
+    write_capacity = 10
+    hash_key = "patientId"
+    projection_type = "ALL"
+  }
   local_secondary_index {
     name = "PatientCategoryIndex"
     range_key = "category"
