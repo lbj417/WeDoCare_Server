@@ -1,9 +1,0 @@
-
-{
-  "name": "WeDoCare_Server",
-  "description": "Server components for WeDoCare application.",
-  "memory": 128,
-  "timeout": 5,
-  "role": "arn:aws:iam::927764861358:role/WeDoCare_Server_lambda_function",
-  "environment": {}
-}
