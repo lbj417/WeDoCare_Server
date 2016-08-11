@@ -29,31 +29,61 @@ exports.handler = function(e, ctx, cb) {
       days: [{
         formattedDate: moment(startDate).format('YYYY-MM-DD'),
         dayOfWeek: moment(startDate).format('dddd'),
-        questionnaires: []
+        questionnaires: [],
+        prescriptions: [{
+          name: 'Lipitor',
+          strength: '50 mg',
+          instructions: 'Take one tablet three times a day.'
+        }],
+        checklists: [],
+        appointments: []
       }, {
         formattedDate: moment(startDate).add(1, 'd').format('YYYY-MM-DD'),
         dayOfWeek: moment(startDate).add(1, 'd').format('dddd'),
-        questionnaires: []
+        questionnaires: [],
+        prescriptions: [],
+        checklists: [],
+        appointments: []
       }, {
         formattedDate: moment(startDate).add(2, 'd').format('YYYY-MM-DD'),
         dayOfWeek: moment(startDate).add(2, 'd').format('dddd'),
-        questionnaires: []
+        questionnaires: [],
+        prescriptions: [],
+        checklists: [],
+        appointments: [{
+          time: '13:00',
+          displayTime: '1:30PM',
+          provider: 'Dr. Robert',
+          location: '1311 SE 3rd St., Atlanta, GA 30309'
+        }]
       }, {
         formattedDate: moment(startDate).add(3, 'd').format('YYYY-MM-DD'),
         dayOfWeek: moment(startDate).add(3, 'd').format('dddd'),
-        questionnaires: []
+        questionnaires: [],
+        prescriptions: [],
+        checklists: [],
+        appointments: []
       }, {
         formattedDate: moment(startDate).add(4, 'd').format('YYYY-MM-DD'),
         dayOfWeek: moment(startDate).add(4, 'd').format('dddd'),
-        questionnaires: []
+        questionnaires: [],
+        prescriptions: [],
+        checklists: [],
+        appointments: []
       }, {
         formattedDate: moment(startDate).add(5, 'd').format('YYYY-MM-DD'),
         dayOfWeek: moment(startDate).add(5, 'd').format('dddd'),
-        questionnaires: []
+        questionnaires: [],
+        prescriptions: [],
+        checklists: [],
+        appointments: []
       }, {
         formattedDate: moment(startDate).add(6, 'd').format('YYYY-MM-DD'),
         dayOfWeek: moment(startDate).add(6, 'd').format('dddd'),
-        questionnaires: []
+        questionnaires: [],
+        prescriptions: [],
+        checklists: [],
+        appointments: []
       }]
     };
     let params = {
